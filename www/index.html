@@ -41,56 +41,29 @@
                         <input type="button" value="No" id="no">
                     </div>
                     <input type="radio" id="remember" class="wow fadeInDown" data-wow-offset="0" data-wow-delay="1.4s">
-                    <label for="remember" class="wow fadeInDown" data-wow-offset="0" data-wow-delay="1.4s">Remember me for future access</label>
+                    <label for="remember" class="wow fadeInDown" data-wow-offset="0" data-wow-delay="1.4s">Remember me
+                        for future access</label>
                 </form>
             </div>
         </div>
     </section>
     <script>
-        // let wrap = document.querySelector('.query-wrap');
-        // wrap.addEventListener('click', (e) => {
-        //     if (e.target.id == "yes") {
-        //         window.location.assign('https://stonebush.neogenos.com/home.html')
-        //     } else if (e.target.id == "no") {
-        //         wrap.classList.add('return');
-        //         wrap.innerHTML = `
-        //         <h2 class="wow fadeIn" data-wow-offset="100" data-wow-delay="0.2s">You must be at leat 21 years of age to to enter this site.</h2>
-        //                 <form action="">
-        //                     <input type="button" value="Return" id="return" class="wow fadeIn" data-wow-offset="100" data-wow-delay="0.4s">
-        //                 </form>`;
-        //     } else if (e.target.id == "return") {
-        //         wrap.classList.remove('return');
-        //         wrap.innerHTML = `<div class="fade-img">
-        //                     <img src="img/age/logo_pink.svg" alt="" class="wow fadeIn" data-wow-offset="100" data-wow-delay="0.2s">
-        //                 </div>
-                            
-        //                 <h2 class="wow fadeIn" data-wow-offset="100" data-wow-delay="1s">You must be at leat 21 years of age to to enter this site.</h2>
-        //                 <p class="wow fadeInDown" data-wow-offset="100" data-wow-delay="1.2s">This website contains information of adult use cannabis and is only intended to be viewed by legally-qualified cannabis users.</p>
-        //                 <h1 class="wow fadeInDown" data-wow-offset="100" data-wow-delay="1.2s">Are You 21+?</h1>
-        //                 <form action="">
-        //                     <div class="confirm wow fadeInDown" data-wow-offset="100" data-wow-delay="1.2s">
-        //                         <input type="button" value="Yes" id="yes">
-        //                         <input type="button" value="No" id="no">
-        //                     </div>
-        //                     <input type="radio" id="remember" class="wow fadeInDown" data-wow-delay="1.8s">
-        //                     <label for="remember" class="wow fadeInDown" data-wow-delay="1.8s">Remember me for future access</label>
-        //                 </form>`;
-        //     }
-        // })
         "use strict";
 
-var wrap = document.querySelector('.query-wrap');
-wrap.addEventListener('click', function (e) {
-  if (e.target.id == "yes") {
-    window.location.href = 'home.html';
-  } else if (e.target.id == "no") {
-    wrap.classList.add('return');
-    wrap.innerHTML = "\n                <h2 class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.2s\">You must be at leat 21 years of age to to enter this site.</h2>\n                        <form action=\"\">\n                            <input type=\"button\" value=\"Return\" id=\"return\" class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.4s\">\n                        </form>";
-  } else if (e.target.id == "return") {
-    wrap.classList.remove('return');
-    wrap.innerHTML = "<div class=\"fade-img\">\n                            <img src=\"img/age/logo_pink.svg\" alt=\"\" class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.2s\">\n                        </div>\n                            \n                        <h2 class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"1s\">You must be at leat 21 years of age to to enter this site.</h2>\n                        <p class=\"wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">This website contains information of adult use cannabis and is only intended to be viewed by legally-qualified cannabis users.</p>\n                        <h1 class=\"wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">Are You 21+?</h1>\n                        <form action=\"\">\n                            <div class=\"confirm wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">\n                                <input type=\"button\" value=\"Yes\" id=\"yes\">\n                                <input type=\"button\" value=\"No\" id=\"no\">\n                            </div>\n                            <input type=\"radio\" id=\"remember\" class=\"wow fadeInDown\" data-wow-delay=\"1.8s\">\n                            <label for=\"remember\" class=\"wow fadeInDown\" data-wow-delay=\"1.8s\">Remember me for future access</label>\n                        </form>";
-  }
-});
+        var wrap = document.querySelector('.query-wrap');
+        wrap.addEventListener('click', function (e) {
+            if (e.target.id == "yes") {
+                window.location.href = 'home.html';
+            } else if (e.target.id == "no") {
+                wrap.classList.add('return');
+                wrap.innerHTML =
+                    "\n                <h2 class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.2s\">You must be at leat 21 years of age to to enter this site.</h2>\n                        <form action=\"\">\n                            <input type=\"button\" value=\"Return\" id=\"return\" class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.4s\">\n                        </form>";
+            } else if (e.target.id == "return") {
+                wrap.classList.remove('return');
+                wrap.innerHTML =
+                    "<div class=\"fade-img\">\n                            <img src=\"img/age/logo_pink.svg\" alt=\"\" class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"0.2s\">\n                        </div>\n                            \n                        <h2 class=\"wow fadeIn\" data-wow-offset=\"100\" data-wow-delay=\"1s\">You must be at leat 21 years of age to to enter this site.</h2>\n                        <p class=\"wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">This website contains information of adult use cannabis and is only intended to be viewed by legally-qualified cannabis users.</p>\n                        <h1 class=\"wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">Are You 21+?</h1>\n                        <form action=\"\">\n                            <div class=\"confirm wow fadeInDown\" data-wow-offset=\"100\" data-wow-delay=\"1.2s\">\n                                <input type=\"button\" value=\"Yes\" id=\"yes\">\n                                <input type=\"button\" value=\"No\" id=\"no\">\n                            </div>\n                            <input type=\"radio\" id=\"remember\" class=\"wow fadeInDown\" data-wow-delay=\"1.8s\">\n                            <label for=\"remember\" class=\"wow fadeInDown\" data-wow-delay=\"1.8s\">Remember me for future access</label>\n                        </form>";
+            }
+        });
     </script>
     <script src='js/wow.min.js'></script>
     <script src='js/jquery.min.js'></script>
