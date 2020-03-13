@@ -1,0 +1,132 @@
+.home header {
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .home header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+  }
+}
+.home header .container {
+  display: flex;
+}
+@media screen and (max-width: 1140px) {
+  .home header .container {
+    justify-content: space-between;
+  }
+}
+.home .home_title {
+  height: 911px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .home .home_title {
+    height: 1024px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home .home_title {
+    height: 812px;
+  }
+}
+.home .home_title .bg {
+  width: 100%;
+  height: 911px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .home .home_title .bg {
+    height: 1024px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home .home_title .bg {
+    height: 812px;
+  }
+}
+.home .home_title .bg_desc {
+  display: block;
+}
+.home .home_title .bg_tablet {
+  display: none;
+}
+.home .home_title .bg_mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .home .home_title .bg_desc {
+    display: none;
+  }
+  .home .home_title .bg_tablet {
+    display: block;
+  }
+  .home .home_title .bg_mob {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home .home_title .bg_desc {
+    display: none;
+  }
+  .home .home_title .bg_tablet {
+    display: none;
+  }
+  .home .home_title .bg_mob {
+    display: block;
+  }
+}
+.home .home_title .container_home {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+}
+.home .home_title .container_home .home_title__text {
+  color: white;
+  font-family: "ThirstyRoughBoldThree";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 114px;
+  line-height: 127%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1024px) {
+  .home .home_title .container_home .home_title__text {
+    font-size: 80px;
+    line-height: 127%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home .home_title .container_home .home_title__text {
+    font-size: 40px;
+    line-height: 127%;
+  }
+}
+.home .home_title .container_home .home_subscribe {
+  min-width: 452px;
+  height: 582px;
+  background-image: url("../img/home/subscribe_bg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.home .home_title .container_home .home_subscribe .home_subscribe__text {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+}
+.home .home_title .container_home .home_bottle img {
+  height: 823px;
+  width: 390px;
+}

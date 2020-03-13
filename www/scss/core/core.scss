@@ -1,0 +1,109 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1276px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (max-width: 1810px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 576px) {
+  /*Минимальная ширина 576*/
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /*Диапазон от 576 до 767*/
+}
+
+@media (man-width: 576px) and (mix-width: 767px) {
+  /*Диапазон Исключения от 576 до 767*/
+}
+
+#mail {
+  label.wrong-field:after {
+    display: block;
+    content: "Please fill in the field";
+    color: red;
+    @include font-avenir;
+    position: absolute;
+    padding: 0 0 0 20px;
+    @media screen and(max-width:1024px) {
+        padding: 5px 0 0 35px;
+    }
+  
+  }
+  input.wrong-field, textarea.wrong-field {
+  border: 0.5px solid red !important;
+  }
+}
+#subscribeFormMob {
+  label.wrong-field:after {
+    display: block;
+    content: "Please fill in the field";
+    color: red;
+    @include font-avenir;
+    position: absolute;
+    padding: 0 0 0 15px;
+  
+  }
+  input.wrong-field, textarea.wrong-field {
+  border: 0.5px solid red !important;
+  }
+}
+#subscribeForm {
+  label.wrong-field:after {
+    display: block;
+    content: "Please fill in the field";
+    color: red;
+    @include font-avenir;
+    position: absolute;
+    padding: 5px 0 0 35px;
+    @media screen and(max-width:1024px) {
+      padding: 5px 0 0 60px;
+  }
+  }
+  input.wrong-field, textarea.wrong-field {
+  border: 0.5px solid red !important;
+  }
+}
+#geo {
+  position: relative;
+}
+#geo2 {
+  position: absolute;
+  top: 0px;
+  @media screen and(max-width: 750px) {
+    top: -60px;
+  }
+}

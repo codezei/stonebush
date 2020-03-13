@@ -1,0 +1,41 @@
+.about header {
+  position: absolute;
+  width: 100%;
+}
+.about header .container {
+  display: flex;
+}
+.about .about_title {
+  height: 595px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about_title .bg {
+  width: 100%;
+  height: 595px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.about .about_title .bg_desc {
+  display: block;
+}
+.about .about_title .bg_tablet {
+  display: none;
+}
+.about .about_title .bg_mob {
+  display: none;
+}
+.about .about_title .container_about .about_title__text {
+  color: white;
+  font-family: "ThirstyRoughBoldThree";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 114px;
+  line-height: 127%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

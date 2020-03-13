@@ -1,0 +1,291 @@
+header {
+  // min-height: 190px;
+  position: relative;
+  // z-index: 9;
+  //position fixed for mobile (changes 24.12.19)
+  height: 126px;
+  @media screen and (max-width:1140px) {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+  }
+  .logo {
+    // padding-top: 34px;
+    // margin-left: 106px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    @media screen and (max-width:1320px) {
+      left: 20px;
+    }
+    img {
+      width: 66px;
+      height: 86px;
+    }
+  }
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      // margin-left: 73px;
+      // margin-top: 48px;
+      padding: 0;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        a {
+          font-size: 24px;
+          line-height: 26px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+          @include font-julis;
+          text-transform: uppercase;
+          text-decoration: none;
+          // margin: 0px 82px;
+          margin: 0 60px;
+          display: block;
+          padding-bottom: 2px;
+          &:hover {
+            border-bottom: 1px solid #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1810px) {
+  header .logo {
+    // padding-top: 21px;
+    // margin-left: 65px;
+    img {
+      width: 61px;
+    }
+  }
+  header {
+    min-height: 106px;
+  }
+  header nav ul {
+    // margin-left: 32px;
+    // margin-top: 23px;
+  }
+  header nav ul li a {
+    margin: 0px 50px;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1140px) {
+ .container {
+    justify-content: flex-end;
+  }
+  // .news .container {
+  //   justify-content: space-between;
+  // }
+  .gamburger {
+    margin-right: 37px;
+    // margin-top: 49px;
+  }
+  header .logo {
+    // padding-top: 33px;
+    // margin-left: 37px;
+    img {
+      width: 74px;
+    }
+  }
+
+}
+
+@media (max-width: 1140px) {
+  header .logo img {
+    width: 42px;
+  }
+  header .logo {
+    margin-left: 34px;
+  }
+  .gamburger {
+    margin-right: 35px;
+    // margin-top: 34px;
+    img {
+      width: 54px;
+    }
+  }
+  header.squeeze {
+    height: 60px !important;
+    min-height: 60px !important;
+    // opacity: 0.95;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    background-image: url("../img/background-news.jpg");
+    background-size: auto;
+    .logo {
+      top: 0;
+      height: 60px;
+      img {
+        height: 60px;
+      }
+    }
+
+}
+  .news header.squeeze {
+    height: 60px !important;
+    min-height: 60px !important;
+    // opacity: 0.95;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    .logo {
+      padding-top: 0px;
+    }
+    .gamburger {
+      // margin-top: 3px !important;
+      display: flex;
+    }
+  }
+}
+
+
+@media (max-width: 374px) {
+  .gamburger img {
+    width: 40px;
+  }
+}
+
+
+.gamburger-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  // top: 20px;
+  font-size: 35px;
+  color: #FFFFFF;
+  overflow: hidden;
+  z-index: 100;
+  @media screen and(max-width:750px) {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+
+  span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transform-origin: 0 0 0;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+    transform: rotate(0deg) translateY(3px);
+    -webkit-transform: rotate(0deg) translateY(3px);
+    -moz-transform: rotate(0deg) translateY(3px);
+    -ms-transform: rotate(0deg) translateY(3px);
+    -o-transform: rotate(0deg) translateY(3px);
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    margin-top: 5px;
+}
+
+  span:nth-child(2) {
+    top: 50%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
+
+  span:nth-child(3) {
+    bottom: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    margin-bottom: 5px;
+}
+
+}
+
+body.mobileMenu {
+  .gamburger {
+    .gamburger-btn {
+      padding-left: 3px;
+      z-index: 100;
+      span {
+        width: 48px;
+      }
+  
+      span:nth-child(1) {
+        top: 0;
+        width: 48px;
+        transform: rotate(45deg) translate(3.5px, 1px);
+        -webkit-transform: rotate(45deg) translate(3.5px, 1px);
+        -moz-transform: rotate(45deg) translate(3.5px, 1px);
+        -ms-transform: rotate(45deg) translate(3.5px, 1px);
+        -o-transform: rotate(45deg) translate(3.5px, 1px);
+        transition: all 500ms;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+        margin-top: 0;
+}
+  
+      span:nth-child(2) {
+        top: 50%;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transition: all 500ms;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+}
+  
+      span:nth-child(3) {
+        bottom: 0;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transition: all 500ms;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -ms-transition: all 500ms;
+        -o-transition: all 500ms;
+        margin-bottom: 0px;
+}
+    }
+  }
+
+
+}
